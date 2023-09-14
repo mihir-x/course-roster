@@ -1,0 +1,75 @@
+[
+    {
+      "id": 101,
+      "image": "https://i.ibb.co/d7P54q0/course-1663052056.jpg",
+      "course_title": "Introduction to Web Development",
+      "course_details": "This comprehensive course covers HTML, CSS, and JavaScript basics, equipping beginners with the skills needed to build websites. Perfect for those starting their web development journey.",
+      "credit": 3,
+      "price": 49.99
+    },
+    {
+      "id": 102,
+      "image": "https://i.ibb.co/vv968gX/What-is-data-science-2.jpg",
+      "course_title": "Data Science Fundamentals",
+      "course_details": "Dive into the world of data with this course. Explore data analysis, visualization, and machine learning concepts. Perfect for aspiring data scientists and analysts.",
+      "credit": 10,
+      "price": 79.99
+    },
+    {
+      "id": 103, 
+      "image": "https://i.ibb.co/QQcsC9C/course-1662724358.jpg",
+      "course_title": "Digital Marketing Mastery",
+      "course_details": "Master the art of online marketing, SEO, and social media advertising. Enhance your online presence and grow your business with these essential skills.",
+      "credit": 3,
+      "price": 59.99
+    },
+    {
+      "id": 104,
+      "image": "https://i.ibb.co/qWYBVKv/what-is-graphic-design.jpg",
+      "course_title": "Graphic Design Essentials",
+      "course_details": "Unlock your creativity with this course. Learn design principles and create stunning visuals. Ideal for aspiring graphic designers and creatives.",
+      "credit": 7,
+      "price": 39.99
+    },
+    {
+      "id": 105,
+      "image": "https://i.ibb.co/wKyJ9DQ/Top-you-Tube-channels-on-python-programming.jpg",
+      "course_title": "Python Programming for Beginners",
+      "course_details": "Build a strong coding foundation with Python. This course covers coding fundamentals and is suitable for newcomers to programming.",
+      "credit": 2,
+      "price": 29.99
+    },
+    {
+      "id": 106,  
+      "image": "https://i.ibb.co/hd7wt65/getty-180152187-48132.jpg",
+      "course_title": "Entrepreneurship 101",
+      "course_details": "Start your entrepreneurial journey with key concepts in business. Learn how to launch and run a successful business with this course.",
+      "credit": 5,
+      "price": 69.99
+    },
+    {
+      "id": 107,  
+      "image": "https://i.ibb.co/9hvn1Nq/017-02-20-scs-shortprograms-fundamentalsofartificial.jpg",
+      "course_title": "Artificial Intelligence Fundamentals",
+      "course_details": "Dive into AI with this comprehensive course. Explore AI algorithms and applications, paving your way into the world of artificial intelligence.",
+      "credit": 5,
+      "price": 89.99
+    },
+    {
+      "id": 108,  
+      "image": "https://i.ibb.co/Vp7MqVF/what-is-an-investment.png",
+      "course_title": "Financial Planning and Investment",
+      "course_details": "Secure your financial future with this course. Learn to manage finances and make smart investments. Essential for personal finance success.",
+      "credit": 3,
+      "price": 59.99
+    },
+    {
+      "id": 109,
+      "image": "https://i.ibb.co/fQD5tXK/1462428-639f-8.jpg",
+      "course_title": "Photography Masterclass",
+      "course_details": "Elevate your photography skills with this masterclass. Capture stunning photos using DSLR and smartphone cameras, and unleash your creative potential.",
+      "credit": 2,
+      "price": 49.99
+    }
+  ]
+  
