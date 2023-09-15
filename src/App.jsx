@@ -7,7 +7,9 @@ import Registration from './components/registration/Registration'
 function App() {
   //handle click on select
   const [registered, setRegistered] = useState([])
+  const [totalCredit, setTotalCredit] = useState(0)
   const handleSelect = (course) => {
+    setTotalCredit(totalCredit + course.credit)
     const isExist = registered.find(item => item.id === course.id)
     if (isExist) {
       return showToast()
@@ -15,8 +17,15 @@ function App() {
     else {
       const newRegistered = [...registered, course]
       setRegistered(newRegistered)
-    }
+    } 
+
+    // for( const i of registered){
+    //   setTotalCredit(totalCredit +i.credit)
+    // }
   }
+  console.log(totalCredit)
+
+
   const showToast = () => {
     const toast = document.getElementById('toast')
     toast.classList.remove('hidden')
@@ -34,7 +43,7 @@ function App() {
             <AllCourse handleSelect={handleSelect}></AllCourse>
           </div>
           <div>
-            <Registration registered={registered}></Registration>
+            <Registration registered={registered} totalCredit={totalCredit}></Registration>
           </div>
         </div>
       </div>

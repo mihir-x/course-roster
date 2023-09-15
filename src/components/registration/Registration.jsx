@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Register from '../register/Register';
 
-const Registration = ({registered}) => {
+const Registration = ({registered , totalCredit}) => {
     
     return (
         <div className="mt-4">
@@ -17,7 +17,7 @@ const Registration = ({registered}) => {
                     </ol>
                 </div>
                 <hr />
-                <h3 className=" text-lg text-[#1c1b1bcc] font-medium bg-white">Total Credit Hour :</h3>
+                <h3 className=" text-lg text-[#1c1b1bcc] font-medium bg-white">Total Credit Hour :{totalCredit}</h3>
                 <hr />
                 <h3 className=" text-lg text-[#1c1b1bcc] font-medium bg-white">Total Price :</h3>
             </div>
@@ -26,6 +26,7 @@ const Registration = ({registered}) => {
 };
 
 Registration.propTypes = {
-    registered: PropTypes.array.isRequired
+    registered: PropTypes.array.isRequired,
+    totalCredit: PropTypes.number.isRequired
 }
 export default Registration;
