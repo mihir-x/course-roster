@@ -8,22 +8,28 @@ function App() {
   //handle click on select
   const [registered, setRegistered] = useState([])
   const [totalCredit, setTotalCredit] = useState(0)
+  const [totalPrice, setTotalPrice] = useState(0)
+  const [remainingCredit, setRemainingCredit] = useState(20)
+  console.log(remainingCredit)
+  if(remainingCredit < 0){
+    setRemainingCredit(0)
+  }
   const handleSelect = (course) => {
-    setTotalCredit(totalCredit + course.credit)
     const isExist = registered.find(item => item.id === course.id)
+    if(course.credit > remainingCredit){
+      return showToast()
+    }
     if (isExist) {
       return showToast()
     }
     else {
       const newRegistered = [...registered, course]
       setRegistered(newRegistered)
-    } 
-
-    // for( const i of registered){
-    //   setTotalCredit(totalCredit +i.credit)
-    // }
+      setTotalCredit(totalCredit + course.credit)
+      setTotalPrice(totalPrice + course.price)
+      setRemainingCredit(remainingCredit - course.credit)
+    }
   }
-  console.log(totalCredit)
 
 
   const showToast = () => {
@@ -43,11 +49,11 @@ function App() {
             <AllCourse handleSelect={handleSelect}></AllCourse>
           </div>
           <div>
-            <Registration registered={registered} totalCredit={totalCredit}></Registration>
+            <Registration registered={registered} remainingCredit={remainingCredit} totalCredit={totalCredit} totalPrice={totalPrice}></Registration>
           </div>
         </div>
       </div>
-      
+
       {/* toast */}
       <div className="toast hidden" id='toast'>
         <div className="alert alert-info bg-sky-500">
