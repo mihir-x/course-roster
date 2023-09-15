@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const Course = ({ course, handleSelect }) => {
     const { image, course_title, course_details, credit, price } = course
     return (
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-base-100 shadow-xl rounded-xl">
             <figure className="px-5 pt-5 h-1/3">
                 <img src={image} alt="Course" className="rounded-xl h-full" />
             </figure>
