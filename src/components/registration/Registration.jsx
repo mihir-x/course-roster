@@ -17,9 +17,9 @@ const Registration = ({registered , totalCredit, totalPrice, remainingCredit}) =
                     </ol>
                 </div>
                 <hr />
-                <h3 className=" text-lg text-[#1c1b1bcc] font-medium bg-white">Total Credit Hour :{totalCredit}</h3>
+                <h3 className=" text-lg text-[#1c1b1bcc] font-medium bg-white">Total Credit Hour : {totalCredit}</h3>
                 <hr />
-                <h3 className=" text-lg text-[#1c1b1bcc] font-medium bg-white">Total Price : {totalPrice} USD</h3>
+                <h3 className=" text-lg text-[#1c1b1bcc] font-semibold bg-white">Total Price : {totalPrice} USD</h3>
             </div>
         </div>
     );
