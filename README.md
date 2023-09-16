@@ -7,6 +7,7 @@ This is a project about online course registration.
 - It is a dynamic website
 - You can select any courses and add it to registration section
 - When you are registered for more than 20hr credits it show you a toast popups
+- You can only select a particular course only once
 
 # The way i managed the state in my project:
 
