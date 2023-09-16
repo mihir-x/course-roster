@@ -10,14 +10,15 @@ function App() {
   const [totalCredit, setTotalCredit] = useState(0)
   const [totalPrice, setTotalPrice] = useState(0)
   const [remainingCredit, setRemainingCredit] = useState(20)
-  console.log(remainingCredit)
+ 
   if(remainingCredit < 0){
     setRemainingCredit(0)
   }
   const handleSelect = (course) => {
     const isExist = registered.find(item => item.id === course.id)
+    
     if(course.credit > remainingCredit){
-      return showToast()
+      return showToastWarning()
     }
     if (isExist) {
       return showToast()
@@ -34,6 +35,13 @@ function App() {
 
   const showToast = () => {
     const toast = document.getElementById('toast')
+    toast.classList.remove('hidden')
+    setTimeout(() => {
+      toast.classList.add('hidden')
+    }, 3000);
+  }
+  const showToastWarning = () => {
+    const toast = document.getElementById('toast-warning')
     toast.classList.remove('hidden')
     setTimeout(() => {
       toast.classList.add('hidden')
@@ -57,7 +65,12 @@ function App() {
       {/* toast */}
       <div className="toast hidden" id='toast'>
         <div className="alert alert-info bg-sky-500">
-          <span className=' bg-sky-500 text-white'>You can not select more</span>
+          <span className=' bg-sky-500 text-white'>You can not select the same card twice</span>
+        </div>
+      </div>
+      <div className="toast hidden" id='toast-warning'>
+        <div className="alert alert-info bg-sky-500">
+          <span className=' bg-sky-500 text-white'>Total Credit cant not exceed 20</span>
         </div>
       </div>
     </>

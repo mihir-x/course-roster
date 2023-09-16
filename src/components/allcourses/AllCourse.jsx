@@ -10,7 +10,7 @@ const AllCourse = ({handleSelect}) => {
     },[])
     
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4 md:mb-10">
             {
                 courses.map(course => <Course key={course.id} course={course} handleSelect={handleSelect}></Course>)
             }
