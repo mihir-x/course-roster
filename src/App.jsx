@@ -16,7 +16,7 @@ function App() {
   }
   const handleSelect = (course) => {
     const isExist = registered.find(item => item.id === course.id)
-    
+
     if(course.credit > remainingCredit){
       return showToastWarning()
     }
@@ -70,7 +70,7 @@ function App() {
       </div>
       <div className="toast hidden" id='toast-warning'>
         <div className="alert alert-info bg-sky-500">
-          <span className=' bg-sky-500 text-white'>Total Credit cant not exceed 20</span>
+          <span className=' bg-sky-500 text-white'>Total Credit can not exceed 20</span>
         </div>
       </div>
     </>
