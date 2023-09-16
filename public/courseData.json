@@ -5,7 +5,7 @@
       "course_title": "Introduction to Web Development",
       "course_details": "This comprehensive course covers HTML, CSS, and JavaScript basics, equipping beginners with the skills needed to build websites. Perfect for those starting their web development journey.",
       "credit": 3,
-      "price": 49.99
+      "price": 15000
     },
     {
       "id": 102,
@@ -13,7 +13,7 @@
       "course_title": "Data Science Fundamentals",
       "course_details": "Dive into the world of data with this course. Explore data analysis, visualization, and machine learning concepts. Perfect for aspiring data scientists and analysts.",
       "credit": 10,
-      "price": 79.99
+      "price": 25000
     },
     {
       "id": 103, 
@@ -21,7 +21,7 @@
       "course_title": "Digital Marketing Mastery",
       "course_details": "Master the art of online marketing, SEO, and social media advertising. Enhance your online presence and grow your business with these essential skills.",
       "credit": 3,
-      "price": 59.99
+      "price": 10000
     },
     {
       "id": 104,
@@ -29,7 +29,7 @@
       "course_title": "Graphic Design Essentials",
       "course_details": "Unlock your creativity with this course. Learn design principles and create stunning visuals. Ideal for aspiring graphic designers and creatives.",
       "credit": 7,
-      "price": 39.99
+      "price": 35000
     },
     {
       "id": 105,
@@ -37,7 +37,7 @@
       "course_title": "Python Programming for Beginners",
       "course_details": "Build a strong coding foundation with Python. This course covers coding fundamentals and is suitable for newcomers to programming.",
       "credit": 2,
-      "price": 29.99
+      "price": 19000
     },
     {
       "id": 106,  
@@ -45,7 +45,7 @@
       "course_title": "Entrepreneurship 101",
       "course_details": "Start your entrepreneurial journey with key concepts in business. Learn how to launch and run a successful business with this course.",
       "credit": 5,
-      "price": 69.99
+      "price": 23000
     },
     {
       "id": 107,  
@@ -53,7 +53,7 @@
       "course_title": "Artificial Intelligence Fundamentals",
       "course_details": "Dive into AI with this comprehensive course. Explore AI algorithms and applications, paving your way into the world of artificial intelligence.",
       "credit": 5,
-      "price": 89.99
+      "price": 40000
     },
     {
       "id": 108,  
@@ -61,7 +61,7 @@
       "course_title": "Financial Planning and Investment",
       "course_details": "Secure your financial future with this course. Learn to manage finances and make smart investments. Essential for personal finance success.",
       "credit": 3,
-      "price": 59.99
+      "price": 27000
     },
     {
       "id": 109,
@@ -69,7 +69,7 @@
       "course_title": "Photography Masterclass",
       "course_details": "Elevate your photography skills with this masterclass. Capture stunning photos using DSLR and smartphone cameras, and unleash your creative potential.",
       "credit": 2,
-      "price": 49.99
+      "price": 10000
     }
   ]
   
